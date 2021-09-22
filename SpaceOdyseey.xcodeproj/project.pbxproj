@@ -15,6 +15,7 @@
 		8C83834626FAE2CC00240C98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C83834426FAE2CC00240C98 /* LaunchScreen.storyboard */; };
 		8C83835126FAE2CD00240C98 /* SpaceOdyseeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C83835026FAE2CD00240C98 /* SpaceOdyseeyTests.swift */; };
 		8C83835C26FAE2CD00240C98 /* SpaceOdyseeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C83835B26FAE2CD00240C98 /* SpaceOdyseeyUITests.swift */; };
+		8C83836A26FAE40500240C98 /* SpaceLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C83836926FAE40500240C98 /* SpaceLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		8C83835726FAE2CD00240C98 /* SpaceOdyseeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceOdyseeyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C83835B26FAE2CD00240C98 /* SpaceOdyseeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceOdyseeyUITests.swift; sourceTree = "<group>"; };
 		8C83835D26FAE2CD00240C98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C83836926FAE40500240C98 /* SpaceLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				8C83834226FAE2CC00240C98 /* Assets.xcassets */,
 				8C83834426FAE2CC00240C98 /* LaunchScreen.storyboard */,
 				8C83834726FAE2CC00240C98 /* Info.plist */,
+				8C83836926FAE40500240C98 /* SpaceLogic.swift */,
 			);
 			path = SpaceOdyseey;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C83833E26FAE2CA00240C98 /* ViewController.swift in Sources */,
+				8C83836A26FAE40500240C98 /* SpaceLogic.swift in Sources */,
 				8C83833A26FAE2CA00240C98 /* AppDelegate.swift in Sources */,
 				8C83833C26FAE2CA00240C98 /* SceneDelegate.swift in Sources */,
 			);

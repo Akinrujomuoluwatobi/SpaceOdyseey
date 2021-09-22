@@ -9,6 +9,8 @@ import XCTest
 @testable import SpaceOdyseey
 
 class SpaceOdyseeyTests: XCTestCase {
+    
+    let logic = SpaceLogic()
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -17,17 +19,36 @@ class SpaceOdyseeyTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testFetchInitialWalBal() throws {
+        let balance = logic.fetchWalletBalance()
+        XCTAssertEqual(balance, 0)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testLoadWallet() throws {
+        let loadedAmount = logic.loadWallet(amount: 3000)
+        XCTAssertEqual(loadedAmount, 3000)
     }
-
+    
+    
+    func testTripAbujaToMoon() throws  {
+        let status = logic.takeTrip(withinOrbit: true, manmadeStation: false, falconType: falconType.falcon9)
+        XCTAssertEqual(status, true)
+    }
+    
+    func testTripMoonToSpoke() throws  {
+        let status = logic.takeTrip(withinOrbit: false, manmadeStation: false, falconType: falconType.falcon1)
+        XCTAssertEqual(status, true)
+    }
+    
+    func testTripMarsToISS() throws  {
+        let status = logic.takeTrip(withinOrbit: false, manmadeStation: true, falconType: falconType.falcon9)
+        XCTAssertEqual(status, true)
+    }
+    
+    func testZFetchWalletBalance() throws {
+        let balance = logic.fetchWalletBalance()
+        XCTAssertEqual(balance, 1950)
+    }
+    
 }
